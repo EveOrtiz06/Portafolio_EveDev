@@ -1,6 +1,6 @@
 /*   - components.css (botones, formularios, tarjetas)*/
 iframe {
-    width: 500px;
+    max-width: 300px;
     height: auto;
     object-fit: cover;
 }
