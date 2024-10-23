@@ -7,9 +7,11 @@
 :root{
    
     --color-primario: #EDEDED;
-     /* 
-    --color-secundario: #E68369;
-    --color-terciario: #ECCEAE;
+     
+    --color-secundario: #E5E5E5;
+    
+    --color-terciario: #EAF2FD;
+    /* 
     --color-hover: #272727; */
 
     --fuente-raleway: "Raleway", sans-serif;
