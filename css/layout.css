@@ -14,11 +14,12 @@ body {
 
 }
 
-/* 1.1. HEADER */
 
+
+/* header mobile */
 header {
 
-    height: 80px;
+   
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,8 +43,10 @@ footer {
     background-color: var(--color-terciario);
 }
 
+
 .lista-menu {
     display: none;
+
 
 }
 
@@ -62,7 +65,7 @@ section {
 }
 
 .descripcion-intro h2 {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.375rem;
 
 }
@@ -88,11 +91,6 @@ p {
     aspect-ratio: 1/1;
 }
 
-
-/* SOBRE MI */
-.sobre-mi {
-    background-color: var(--color-terciario);
-}
 
 
 
@@ -139,29 +137,52 @@ p {
 
     .descripcion-intro {
         max-width: 524px;
+/* Tablet */
+    body {
+        font-size: 0.875rem;
+        /* 14px */
+        padding: 0 2rem;
+        /* 32px */
     }
 
-    .descripcion-intro p {
-        margin: 0.5rem 0;
-    }
 
-    .lista-redirecciones {
+    .intro {
+        flex-wrap: nowrap;
+        justify-content: space-between;
         display: flex;
-        gap: 2rem;
+        align-items: center;
     }
 
     .img-intro {
         max-width: 146px;
+
         height: auto;
         aspect-ratio: 1/1;
     }
 
-    /* SOBRE MI */
-    .sobre-mi {
-        background-color: var(--color-terciario);
+    
+
+    .descripcion-intro h2 {
+        font-size: 1.375rem;
+        /* 22px */
     }
 
+    .descripcion-intro p {
+        font-size: 1rem;
+        /* 16px */
+    }
+    .lista-redirecciones {
+        font-size: 1rem;
+        display: flex;
+        gap: 32px;
+        flex-wrap: nowrap;
+
+    }
 }
+
+    
+
+
 
 /* 3. DESKTOP */
 /* @media screen and (min-width: 769px) */
@@ -196,15 +217,21 @@ p {
     .formacion,
     .contacto {
         background-color: var(--color-terciario);
-    }
 
-    /* 3.1. HEADER */
+
+
+/* Desktop */
+
+
+
+    /*  HEADER desktop */
     .lista-menu {
         display: flex;
         justify-content: space-between;
         gap: 32px;
-        font-size: 16px;
-        font-weight: 700;
+        font-size: 1rem;
+        /* 16px */
+        font-weight: 500;
         color: #464646;
     }
 
@@ -213,7 +240,8 @@ p {
 
     }
 
-    /* 3.2. INTRO */
+    /* section intro desktop */
+
     .intro {
         display: flex;
         align-items: center;
@@ -234,11 +262,15 @@ p {
         margin: 24px 0;
     }
 
-    .descripcion-intro h2 {
-        font-weight: bold;
-        font-size: 3.25rem;
+    
 
+
+    .descripcion-intro h2 {
+        font-weight: 700;
+        font-size: 3.25rem;
+        /* 52px */
     }
+
 
     .lista-redirecciones {
         display: flex;
