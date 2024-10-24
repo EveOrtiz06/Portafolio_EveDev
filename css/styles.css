@@ -6,11 +6,11 @@
 /* TIPOGRAFÍA */
 :root{
    
-    --color-primario: #EDEDED;
+    --color-primario: #F5F5F5;
      
-    --color-secundario: #E5E5E5;
+    --color-secundario: rgb(234,242,253);
     
-    --color-terciario: #EAF2FD;
+    --color-fuente: #464646;
     /* 
     --color-hover: #272727; */
 

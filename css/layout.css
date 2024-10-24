@@ -1,46 +1,74 @@
 /*   - layout.css     (encabezado, pie de página, cuadrículas) */
 
 
+html {
+    font-size: 100%;
+    /* 16px */
+}
 
-/* 1. MOBILE */
-
-body {
-    font-family: var(--fuente-raleway);
-    /* margin: auto;
-    padding: 0 16px; */
-
-    /* max-width: 1168px; */
-    font-size: 14px;
+.evedev,
+.correo-contacto {
+    font-size: 1rem;
 
 }
 
+.evedev {
+    font-weight: bold;
+}
+/* 
+.sobre-mi{
+    background-color: var(--color-secundario);
+}
+.formacion{
+    background-color: var(--color-secundario);
+}
+.contacto {
+    background-color: var(--color-secundario);
+    
+} */
 
+
+/* Estilos predeterminados (MOBILE) */
+body {
+    font-size: 0.875rem;
+    /* 14px */
+    padding: 0 1rem;
+    /* 16px */
+    font-family: var(--fuente-raleway);
+    
+    color: var(--color-fuente);
+}
+
+p,
+a {
+    font-size: 0.875rem;
+
+}
+
+figcaption {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
 
 /* header mobile */
 header {
-
-   
+    width: 100%;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--color-primario);
 
-    max-width: 1168px;
-
-}
-
-header,
-.intro,
-.skills,
-.hobbies,
-.proyectos,
-footer {
-    background-color: var(--color-secundario);
-}
-
-.sobre-mi,
-.formacion,
-.contacto {
-    background-color: var(--color-terciario);
 }
 
 
@@ -50,39 +78,17 @@ footer {
 
 }
 
-/* 1.2. INTRO */
-
-header,
-section {
-    padding: 16px 16px;
-    max-width: 1168px;
-}
-
-.intro {
+/* section intro */
+.intro{
     display: flex;
     flex-wrap: wrap-reverse;
-    gap: 1rem;
+    background-color: var(--color-primario);
 }
 
 .descripcion-intro h2 {
     font-weight: 700;
     font-size: 1.375rem;
-
-}
-
-p {
-
-    font-size: 1rem;
-
-}
-
-.descripcion-intro p {
-    margin: 1rem 0;
-}
-
-.lista-redirecciones {
-    display: flex;
-    gap: 0.5rem;
+    /* 22px */
 }
 
 .img-intro {
@@ -91,66 +97,63 @@ p {
     aspect-ratio: 1/1;
 }
 
+.lista-redirecciones {
+    font-size: 1rem;
+    display: flex;
+    gap: 32px;
+    flex-wrap: nowrap;
+
+}
 
 
 
 
-/* 2. TABLET and (max-width: 768px) */
-@media screen and (min-width: 475px) {
-    body {
-
-        font-size: 14px;
-
-    }
-
-    header, 
-    section,
-    footer {
-        
-        padding: 16px 32px;
-        max-width: 1168px;
-    }
-
-    
-    header,
-    footer,
-    .intro,
-    .skills,
-    .hobbies,
-    .proyectos{
-        background-color: var(--color-secundario);
-    }
-
-    .sobre-mi,
-    .formacion,
-    .contacto {
-        background-color: var(--color-terciario);
-    }
-
-    /* 2.1. INTRO */
-    .intro {
-        display: flex;
-        flex-wrap: nowrap;
-
-
-    }
-
-    .descripcion-intro {
-        max-width: 524px;
 /* Tablet */
+@media screen and (min-width: 475px) {
     body {
         font-size: 0.875rem;
         /* 14px */
         padding: 0 2rem;
         /* 32px */
     }
+    header {
+    background-color: var(--color-primario);
+}
 
+
+    p,
+    a {
+        font-size: 1rem;
+
+    }
+
+    figcaption {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 1.375rem;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .evedev,
+    .correo-contacto {
+        font-size: 1rem;
+        font-weight: bold;
+    }
 
     .intro {
         flex-wrap: nowrap;
         justify-content: space-between;
         display: flex;
         align-items: center;
+        background-color: var(--color-primario);
     }
 
     .img-intro {
@@ -160,7 +163,7 @@ p {
         aspect-ratio: 1/1;
     }
 
-    
+
 
     .descripcion-intro h2 {
         font-size: 1.375rem;
@@ -171,6 +174,7 @@ p {
         font-size: 1rem;
         /* 16px */
     }
+
     .lista-redirecciones {
         font-size: 1rem;
         display: flex;
@@ -180,51 +184,53 @@ p {
     }
 }
 
-    
-
-
-
-/* 3. DESKTOP */
-/* @media screen and (min-width: 769px) */
-@media screen and (min-width: 769px) {
-    body {
-
-        font-size: 16px;
-
-    }
-
-    header, 
-    section, 
-    footer {
-        
-        padding: 32px 64px;
-        
-        max-width: 1136px;
-        
-
-    }
-
-    header,
-    footer,
-    .intro,
-    .skills,
-    .hobbies,
-    .proyectos {
-        background-color: var(--color-secundario);
-    }
-
-    .sobre-mi,
-    .formacion,
-    .contacto {
-        background-color: var(--color-terciario);
 
 
 
 /* Desktop */
+@media screen and (min-width: 769px) {
+    body {
+        font-size: 1rem;
+        /* 16px */
+        padding: 0 2rem;
+        /* 32px */
+        max-width: 1136px;
+        margin: auto;
+    }
 
+
+
+    .evedev,
+    .lista-menu-contacto{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    p,
+    a {
+        font-size: 1rem;
+    }
+
+    figcaption {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 1.375rem;
+        font-weight: bold;
+    }
 
 
     /*  HEADER desktop */
+    header {
+        background-color: var(--color-primario);
+    }
     .lista-menu {
         display: flex;
         justify-content: space-between;
@@ -248,22 +254,15 @@ p {
 
         flex-wrap: nowrap;
         /* margin: 32px auto; */
-
-        gap: 32px;
+        /* gap: auto; */
+        background-color: var(--color-primario);
     }
 
     .descripcion-intro {
-        max-width: 100%;
         max-height: 100%;
-
+        width: auto;
+        gap: 32px;
     }
-
-    .descripcion-intro p {
-        margin: 24px 0;
-    }
-
-    
-
 
     .descripcion-intro h2 {
         font-weight: 700;
@@ -271,22 +270,22 @@ p {
         /* 52px */
     }
 
-
-    .lista-redirecciones {
-        display: flex;
-        gap: 2rem;
-    }
-
-
     .img-intro {
-        max-width: 368px;
+        max-width: 100%;
+        /* 368px */
         height: auto;
         aspect-ratio: 1/1;
     }
 
-    /* SOBRE MI */
-    .sobre-mi {
-        background-color: var(--color-terciario);
-    }
+    .lista-redirecciones {
+        font-size: 1rem;
+        display: flex;
+        gap: 32px;
+        flex-wrap: nowrap;
 
+    }
+    
+    .sobre-mi{
+        background-color: var(--color-secundario);
+    }
 }
