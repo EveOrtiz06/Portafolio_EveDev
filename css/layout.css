@@ -2,8 +2,8 @@
 
 
 html {
-    font-size: 100%;
-    /* 16px */
+    font-size: 100%;/* 16px */
+    
 }
 
 .evedev,
@@ -66,7 +66,7 @@ header,
 main,
 section,
 footer {
-    width: 100vw;
+    /* width: 100vw; */
     margin: 0;
     padding: 0;
 }
@@ -199,7 +199,7 @@ footer {
     main,
     section,
     footer {
-        width: 100vw;
+        /* width: 100vw; */
         margin: 0;
         padding: 0;
     }
