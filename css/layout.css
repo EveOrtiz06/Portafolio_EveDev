@@ -132,7 +132,6 @@ ul,
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  object-fit: cover;
 }
 
 .lista-redirecciones {
@@ -254,14 +253,13 @@ ul,
   }
 
   .img-intro {
-    width: 146px;
-    height: 146px;
+    max-width: 146px;
+    height: auto;
     aspect-ratio: 1/1;
     background-image: url(https://acortar.link/pytFTe);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    object-fit: cover;
   }
 
   .descripcion-intro {
@@ -426,14 +424,13 @@ ul,
   }
 
   .img-intro {
-    width: 368px;
-    height: 368px;
+    max-width: 368px;
+    height: auto;
     aspect-ratio: 1/1;
     background-image: url(https://acortar.link/pytFTe);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    object-fit: cover;
   }
 
   .lista-redirecciones {
