@@ -120,6 +120,16 @@ footer {
     /* 22px */
 }
 
+.descripcion-intro p, h2, ul, .img-intro {
+
+    padding: 1rem 0;
+
+}
+.img-redireccion{
+    width: 1rem;
+    height: auto;
+}
+
 .img-intro {
     max-width: 98px;
     height: auto;
@@ -133,11 +143,43 @@ footer {
     flex-wrap: nowrap;
 
 }
+.lista-redirecciones li{
+    display: flex;
+}
 
 /* section sobre mi */
-.sobre-mi {
+#sobre-mi {
     background-color: var(--color-secundario);
 }
+
+
+/* section skills */
+#skills {
+    background-color: var(--color-primario);
+}
+
+
+/* section hobbies */
+#hobbies {
+    background-color: var(--color-primario);
+}
+
+/* section formacion */
+#formacion {
+    background-color: var(--color-secundario);
+}
+
+/* section proyectos/experiencia */
+#proyectos {
+    background-color: var(--color-primario);
+}
+
+
+/* section contacto */
+#contacto {
+    background-color: var(--color-secundario);
+}
+
 
 
 /* Tablet */
@@ -230,6 +272,7 @@ footer {
     .descripcion-intro p {
         font-size: 1rem;
         /* 16px */
+        padding: 0.5rem 0;
     }
 
     .lista-redirecciones {
@@ -241,9 +284,43 @@ footer {
     }
 
     /* section sobre mi */
-    .sobre-mi {
+    #sobre-mi {
         background-color: var(--color-secundario);
     }
+
+
+    /* section skills */
+    #skills {
+        background-color: var(--color-primario);
+    }
+
+
+    /* section hobbies */
+    #hobbies {
+        background-color: var(--color-primario);
+    }
+
+    /* section formacion */
+    #formacion {
+        background-color: var(--color-secundario);
+    }
+
+    /* section proyectos/experiencia */
+    #proyectos {
+        background-color: var(--color-primario);
+    }
+
+
+    /* section contacto */
+    #contacto {
+        background-color: var(--color-secundario);
+    }
+
+
+
+
+
+
 }
 
 
@@ -279,7 +356,7 @@ footer {
     .section-div-proyectos,
     .section-div-contacto,
     .footer {
-        padding: 2rem 0;
+        padding: 2rem 1rem;
         max-width: 1136px;
         margin: 0 auto;
 
@@ -350,13 +427,17 @@ footer {
     .descripcion-intro {
         max-height: 100%;
         width: auto;
-        gap: 32px;
+        padding: 2rem 0;
+
     }
 
     .descripcion-intro h2 {
         font-weight: 700;
         font-size: 3.25rem;
         /* 52px */
+    }
+    .descripcion-intro p {
+        padding: 1.5rem 0;
     }
 
     .img-intro {
@@ -376,35 +457,35 @@ footer {
 
 
     /* section sobre mi */
-    .sobre-mi {
+    #sobre-mi {
         background-color: var(--color-secundario);
     }
 
 
     /* section skills */
-    .skills {
+    #skills {
         background-color: var(--color-primario);
     }
 
 
     /* section hobbies */
-    .hobbies {
+    #hobbies {
         background-color: var(--color-primario);
     }
 
     /* section formacion */
-    .formacion {
+    #formacion {
         background-color: var(--color-secundario);
     }
 
     /* section proyectos/experiencia */
-    .proyectos {
+    #proyectos {
         background-color: var(--color-primario);
     }
 
 
     /* section contacto */
-    .contacto {
+    #contacto {
         background-color: var(--color-secundario);
     }
 
