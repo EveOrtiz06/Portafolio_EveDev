@@ -4,16 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* TIPOGRAFÍA */
-:root{
-   
+:root {
+
     --color-primario: #F5F5F5;
-     
+
     --color-secundario: #EAF2FD;
-    
+
     --color-fuente: #464646;
     /* 
     --color-hover: #272727; */
 
     --fuente-raleway: "Raleway", sans-serif;
-    
+
 }
