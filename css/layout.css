@@ -50,6 +50,7 @@ figcaption {
 h2 {
     font-size: 1.375rem;
     font-weight: bold;
+    
 }
 
 h3 {
@@ -77,6 +78,18 @@ footer {
 .section-div-contacto,
 .footer {
     padding: 1rem 1rem;
+}
+
+
+
+.section-div-sobre-mi,
+.section-div-skills,
+.section-div-hobbies,
+.section-div-formacion,
+.section-div-proyectos,
+.section-div-contacto,
+.footer h2 {
+    text-align: center;
 }
 
 .div-header {
@@ -158,30 +171,39 @@ ul {
 #skills {
     background-color: var(--color-primario);
     
+    
 }
+    
+
+
 .skills-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 16px;
+    grid-column-gap: 16px ;
     grid-row-gap: 32px;
     
-}
+    margin: 0 auto;
+
+} 
 
 .skills-grid-card {
-    width: 156px;
-    height: 118px;
-    background-color: #ffffff;
     padding: 16px;
+    min-width: 140px;
    
     
-    align-content: flex-end;
+    height: 102px;
+    background-color: #ffffff;
+    
+    justify-items: start;
+   align-content: flex-end;
+   
 }
 
 .skills-grid-card figcaption {
     margin-top: 8px;
 }
 
-/* section hobbies */
+/* section hobbies */ 
 #hobbies {
     background-color: var(--color-primario);
 }
@@ -194,10 +216,11 @@ ul {
 }
 
 .hobbies-grid-card {
-    width: 156px;
-    height: 118px;
-    background-color: #ffffff;
     padding: 16px;
+    max-width: 140px;
+    height: 102px;
+    background-color: #ffffff;
+  
    
     
     align-content: flex-end;
@@ -285,19 +308,21 @@ ul {
     }
 
     .section-div-intro {
-        display: flex;
-        flex-wrap: nowrap;
-        /* justify-content: space-between; */
+        display: grid;
+       
+        grid-template-columns: minmax(260px, 524px) 146px;
 
         align-items: center;
-
+        grid-gap: auto;
         background-color: var(--color-primario);
-        gap: 2rem;
-       
+        /* flex-direction: row;
+        justify-content: space-between;
+        flex-wrap:wrap-reverse;  */
     }
 
     .img-intro {
         width: 146px;
+        
         height: 146px;
 
 
@@ -312,13 +337,15 @@ ul {
 
     }
 
-    .descripcion-intro {
-        max-width: 524px;
-
+    /* .descripcion-intro {
+        width: 510px;
+        
+        
 
         height: auto;
         
-    }
+        
+    } */
 
     .descripcion-intro h2 {
         font-size: 1.375rem;
@@ -335,7 +362,7 @@ ul {
         font-size: 1rem;
         display: flex;
         gap: 32px;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 
     /* section sobre mi */
@@ -476,6 +503,7 @@ ul {
 
     .descripcion-intro p {
         padding: 1.5rem 0;
+        font-size: 1.375rem;
     }
 
     .img-intro {
