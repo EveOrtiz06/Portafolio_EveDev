@@ -50,7 +50,7 @@ figcaption {
 h2 {
     font-size: 1.375rem;
     font-weight: bold;
-    
+
 }
 
 h3 {
@@ -82,20 +82,12 @@ footer {
 
 
 
-.section-div-sobre-mi,
-.section-div-skills,
-.section-div-hobbies,
-.section-div-formacion,
-.section-div-proyectos,
-.section-div-contacto,
-.footer h2 {
+.titulo-seccion {
     text-align: center;
 }
 
 .div-header {
-    /* width: 100%; */
 
-    /* height: 80px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -167,64 +159,75 @@ ul {
     background-color: var(--color-secundario);
 }
 
+
+
 /* section skills */
 #skills {
     background-color: var(--color-primario);
-    
-    
+
+
 }
-    
 
 
-.skills-grid{
+.skills-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 16px ;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-column-gap: 16px;
     grid-row-gap: 32px;
-    
-    margin: 0 auto;
 
-} 
+
+
+}
 
 .skills-grid-card {
     padding: 16px;
-    min-width: 140px;
-   
-    
+
+
     height: 102px;
     background-color: #ffffff;
-    
-    justify-items: start;
-   align-content: flex-end;
-   
+
+    align-content: flex-end;
+
 }
 
 .skills-grid-card figcaption {
     margin-top: 8px;
 }
 
-/* section hobbies */ 
+.skills-grid-card img {
+
+    height: 37px;
+    width: auto;
+}
+
+
+/* section hobbies */
 #hobbies {
     background-color: var(--color-primario);
+
 }
-.hobbies-grid{
+
+
+.hobbies-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     grid-column-gap: 16px;
     grid-row-gap: 32px;
-    
+
+
+
 }
 
 .hobbies-grid-card {
     padding: 16px;
-    max-width: 140px;
+
+
     height: 102px;
     background-color: #ffffff;
-  
-   
-    
+
     align-content: flex-end;
 }
+
 .hobbies-grid-card figcaption {
     margin-top: 8px;
 }
@@ -232,6 +235,46 @@ ul {
 /* section formacion */
 #formacion {
     background-color: var(--color-secundario);
+}
+
+.formacion-academica {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); */
+    grid-template-columns: repeat(auto-fit);
+    grid-gap: 16px;
+}
+
+.formacion-academica figure {
+    height: 169px;
+
+
+}
+
+.img-formacion {
+    height: 118px;
+    background-color: #ffffff;
+
+
+
+    align-content: center;
+
+
+}
+
+.formacion-academica figure img {
+
+    height: 84px;
+    width: auto;
+    margin: auto;
+}
+
+.formacion-academica figcaption {
+
+    background: none;
+
+
+
+    align-content: flex-end;
 }
 
 /* section proyectos/experiencia */
@@ -309,7 +352,7 @@ ul {
 
     .section-div-intro {
         display: grid;
-       
+
         grid-template-columns: minmax(260px, 524px) 146px;
 
         align-items: center;
@@ -322,7 +365,7 @@ ul {
 
     .img-intro {
         width: 146px;
-        
+
         height: 146px;
 
 
@@ -375,6 +418,10 @@ ul {
         background-color: var(--color-primario);
     }
 
+
+
+
+
     /* section hobbies */
     #hobbies {
         background-color: var(--color-primario);
@@ -383,6 +430,14 @@ ul {
     /* section formacion */
     #formacion {
         background-color: var(--color-secundario);
+    }
+
+    .formacion-academica {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .formacion-academica figure {
+        height: 169px;
     }
 
     /* section proyectos/experiencia */
@@ -486,7 +541,7 @@ ul {
 
         flex-wrap: nowrap;
 
-       justify-content: space-between;
+        justify-content: space-between;
     }
 
     .descripcion-intro {
@@ -537,14 +592,33 @@ ul {
         background-color: var(--color-primario);
     }
 
+    .skills-grid {
+        grid-template-columns: repeat(176px);
+    }
+
+    .skills-grid-card {
+        height: 158px;
+        background-color: #E5E5E5;
+    }
+
     /* section hobbies */
     #hobbies {
         background-color: var(--color-primario);
     }
 
+    .hobbies-grid-card {
+        height: 158px;
+        background-color: #E5E5E5;
+    }
+
     /* section formacion */
     #formacion {
         background-color: var(--color-secundario);
+    }
+
+    .formacion-academica figure {
+        height: 368px;
+        background-color: #E5E5E5;
     }
 
     /* section proyectos/experiencia */
