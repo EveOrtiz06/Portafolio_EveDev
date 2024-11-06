@@ -246,20 +246,23 @@ ul {
 
 .formacion-academica figure {
     height: 169px;
+}
 
-
+.formacion-academica h3,
+p {
+    padding-top: 8px;
 }
 
 .img-formacion {
     height: 118px;
     background-color: #ffffff;
+    display: flex;
+    align-items: center;
 
-
-
-    align-content: center;
 
 
 }
+
 
 .formacion-academica figure img {
 
@@ -282,10 +285,160 @@ ul {
     background-color: var(--color-primario);
 }
 
+.proyectos-realizados {
+
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    grid-gap: 64px;
+}
+
+.proyecto-card {
+    height: 251px;
+    width: 100%;
+
+}
+
+.description-project {
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    gap: 8px;
+    margin-top: 16px;
+
+
+}
+
+.description-project p {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+.img-project-card {
+    height: 144px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.botones-enlaces {
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.botones-enlaces li {
+    width: 96px;
+    height: 40px;
+    border: 1px #2A7AE4 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+
+
+}
+
+.boton-repo {
+    color: #2A7AE4;
+
+
+}
+
+.boton-demo {
+    background-color: #2A7AE4;
+}
+
+.link-demo {
+    color: #ffffff;
+}
+
 /* section contacto */
 #contacto {
     background-color: var(--color-secundario);
 }
+
+
+label,
+input,
+button,
+textarea {
+
+    display: block;
+    width: 100%;
+    border: none;
+
+
+}
+
+.form-contact {
+    display: grid;
+    width: 100%;
+    grid-gap: 32px;
+}
+
+label {
+    padding: 7px 12px;
+    background-color: #ffffff;
+    color: #A2A2A2;
+    font-size: 12px;
+    border-bottom: 1px #A2A2A2 solid;
+}
+
+label:hover {
+    border: none;
+    border-bottom: 2px #2A7AE4 solid;
+    color: #2A7AE4;
+}
+
+input {
+    height: 20px;
+    color: #464646;
+    font-size: 16px;
+    border: none;
+}
+
+/* Elimina el borde de enfoque en los campos de entrada */
+input:focus,
+textarea:focus {
+    outline: none;
+    /* Quita el borde de enfoque predeterminado */
+    border: none;
+    /* Puedes agregar un borde personalizado si quieres */
+
+}
+
+.input {
+    margin-top: 4px;
+}
+
+textarea {
+    font-family: var(--fuente-raleway);
+    font-size: 16px;
+    resize: none;
+}
+
+.submit {
+    background-color: #2A7AE4;
+    color: #ffffff;
+    width: 133px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.section-div-contacto img {
+    display: none;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+}
+
+
+
 
 /* Tablet */
 @media screen and (min-width: 475px) {
@@ -380,15 +533,7 @@ ul {
 
     }
 
-    /* .descripcion-intro {
-        width: 510px;
-        
-        
-
-        height: auto;
-        
-        
-    } */
+   
 
     .descripcion-intro h2 {
         font-size: 1.375rem;
@@ -445,189 +590,267 @@ ul {
         background-color: var(--color-primario);
     }
 
+    .proyecto-card {
+        height: 438px;
+    }
+
+    .proyecto-card img {
+        height: 320px;
+    }
+
     /* section contacto */
     #contacto {
         background-color: var(--color-secundario);
     }
-}
 
-/* Desktop */
-@media screen and (min-width: 769px) {
-    body {
-        font-size: 1rem;
-        /* 16px */
-        /* padding: 0 2rem; */
-        /* 32px */
-        /* max-width: 1136px; */
-        margin: auto;
-    }
-
-    header,
-    main,
-    section,
-    footer {
-        max-width: 100vw;
-        margin: 0;
-        padding: 0;
-    }
-
-    .div-header,
-    .section-div-intro,
-    .section-div-sobre-mi,
-    .section-div-skills,
-    .section-div-hobbies,
-    .section-div-formacion,
-    .section-div-proyectos,
-    .section-div-contacto,
-    .footer {
-        padding: 2rem 1rem;
-        max-width: 1136px;
-        margin: 0 auto;
-    }
-
-    .evedev,
-    .lista-menu-contacto {
-        font-size: 1rem;
-        font-weight: bold;
-    }
-
-    p,
-    a {
-        font-size: 1rem;
-    }
-
-    figcaption {
-        font-size: 1rem;
-        font-weight: bold;
-    }
-
-    h2 {
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    h3 {
-        font-size: 1.375rem;
-        font-weight: bold;
-    }
-
-    /*  HEADER desktop */
-    header {
-        background-color: var(--color-primario);
-    }
-
-    .lista-menu {
-        display: flex;
-        justify-content: space-between;
-        gap: 32px;
-        font-size: 1rem;
-        /* 16px */
-        font-weight: 500;
-        color: #464646;
-    }
-
-    .correo-contacto {
+    .section-div-contacto img {
         display: none;
     }
-
-    /* section intro desktop */
-    .intro {
-        background-color: var(--color-primario);
-    }
-
-    .section-div-intro {
-        display: flex;
-        align-items: center;
-
-        flex-wrap: nowrap;
-
-        justify-content: space-between;
-    }
-
-    .descripcion-intro {
-        max-width: 751px;
-
-        padding: 2rem 0;
-    }
-
-    .descripcion-intro h2 {
-        font-weight: 700;
-        font-size: 3.25rem;
-        /* 52px */
-    }
-
-    .descripcion-intro p {
-        padding: 1.5rem 0;
-        font-size: 1.375rem;
-    }
-
-    .img-intro {
-        width: 368px;
-        height: auto;
-        min-width: 146px;
-
-        background-image: url(https://acortar.link/pytFTe);
-        background-size: cover;
-        background-position: center;
-        border-radius: 50%;
-        padding: 0;
-        margin: 0;
-        aspect-ratio: 1 / 1;
-    }
-
-    .lista-redirecciones {
-        font-size: 1rem;
-        display: flex;
-        gap: 32px;
-        flex-wrap: nowrap;
-    }
-
-    /* section sobre mi */
-    #sobre-mi {
-        background-color: var(--color-secundario);
-    }
-
-    /* section skills */
-    #skills {
-        background-color: var(--color-primario);
-    }
-
-    .skills-grid {
-        grid-template-columns: repeat(176px);
-    }
-
-    .skills-grid-card {
-        height: 158px;
-        background-color: #E5E5E5;
-    }
-
-    /* section hobbies */
-    #hobbies {
-        background-color: var(--color-primario);
-    }
-
-    .hobbies-grid-card {
-        height: 158px;
-        background-color: #E5E5E5;
-    }
-
-    /* section formacion */
-    #formacion {
-        background-color: var(--color-secundario);
-    }
-
-    .formacion-academica figure {
-        height: 368px;
-        background-color: #E5E5E5;
-    }
-
-    /* section proyectos/experiencia */
-    #proyectos {
-        background-color: var(--color-primario);
-    }
-
-    /* section contacto */
-    #contacto {
-        background-color: var(--color-secundario);
-    }
 }
+    /* Desktop */
+    @media screen and (min-width: 769px) {
+        body {
+            font-size: 1rem;
+            /* 16px */
+            /* padding: 0 2rem; */
+            /* 32px */
+            /* max-width: 1136px; */
+            margin: auto;
+        }
+
+        header,
+        main,
+        section,
+        footer {
+            max-width: 100vw;
+            margin: 0;
+            padding: 0;
+        }
+
+        .div-header,
+        .section-div-intro,
+        .section-div-sobre-mi,
+        .section-div-skills,
+        .section-div-hobbies,
+        .section-div-formacion,
+        .section-div-proyectos,
+        .section-div-contacto,
+        .footer {
+            padding: 2rem 1rem;
+            max-width: 1136px;
+            margin: 0 auto;
+        }
+
+        .evedev,
+        .lista-menu-contacto {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        p,
+        a {
+            font-size: 1rem;
+        }
+
+        figcaption {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 1.375rem;
+            font-weight: bold;
+        }
+
+        /*  HEADER desktop */
+        header {
+            background-color: var(--color-primario);
+        }
+
+        .lista-menu {
+            display: flex;
+            justify-content: space-between;
+            gap: 32px;
+            font-size: 1rem;
+            /* 16px */
+            font-weight: 500;
+            color: #464646;
+        }
+
+        .correo-contacto {
+            display: none;
+        }
+
+        /* section intro desktop */
+        .intro {
+            background-color: var(--color-primario);
+        }
+
+        .section-div-intro {
+            display: flex;
+            align-items: center;
+
+            flex-wrap: nowrap;
+
+            justify-content: space-between;
+        }
+
+        .descripcion-intro {
+            max-width: 751px;
+
+            padding: 2rem 0;
+        }
+
+        .descripcion-intro h2 {
+            font-weight: 700;
+            font-size: 3.25rem;
+            /* 52px */
+        }
+
+        .descripcion-intro p {
+            padding: 1.5rem 0;
+            font-size: 1.375rem;
+        }
+
+        .img-intro {
+            width: 368px;
+            height: auto;
+            min-width: 146px;
+
+            background-image: url(https://acortar.link/pytFTe);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            padding: 0;
+            margin: 0;
+            aspect-ratio: 1 / 1;
+        }
+
+        .lista-redirecciones {
+            font-size: 1rem;
+            display: flex;
+            gap: 32px;
+            flex-wrap: nowrap;
+        }
+
+        /* section sobre mi */
+        #sobre-mi {
+            background-color: var(--color-secundario);
+        }
+
+        /* section skills */
+        #skills {
+            background-color: var(--color-primario);
+        }
+
+        .skills-grid {
+            grid-template-columns: repeat(176px);
+        }
+
+        .skills-grid-card {
+            height: 158px;
+            background-color: #E5E5E5;
+        }
+
+        /* section hobbies */
+        #hobbies {
+            background-color: var(--color-primario);
+        }
+
+        .hobbies-grid-card {
+            height: 158px;
+            background-color: #E5E5E5;
+        }
+
+        /* section formacion */
+        #formacion {
+            background-color: var(--color-secundario);
+        }
+
+        .formacion-academica figure {
+            height: 368px;
+            background-color: none;
+        }
+
+        .img-formacion {
+            height: 286px;
+            background-color: #E5E5E5;
+        }
+
+        .img-formacion img {
+            height: 150px;
+            width: auto;
+        }
+
+        /* section proyectos/experiencia */
+        #proyectos {
+            background-color: var(--color-primario);
+        }
+
+        .proyecto-card {
+            height: 406px;
+            display: flex;
+            gap: 16px;
+            
+
+
+        }
+
+        .proyecto-card-impar {
+            justify-content: space-between;
+
+        }
+
+        .img-card-impar {
+            order: 1;
+        }
+
+        .proyecto-card img {
+            max-width: 752px;
+            height: 100%;
+        }
+
+        .proyecto-card figcaption {
+            align-content: center;
+        }
+
+
+        .botones-enlaces li {
+            height: 51px;
+            width: 116px;
+        }
+
+        /* section contacto */
+        #contacto {
+            background-color: var(--color-secundario);
+        }
+
+        .section-div-contacto {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            width: 100%;
+
+        }
+
+        .section-div-contacto img {
+            max-width: 464px;
+            height: 593px;
+            display: flex;
+        }
+
+        label, 
+        input,
+        textarea{
+            width: 100%;
+        }
+
+        .form-contact {
+            max-width: 656px;
+        }
+    }

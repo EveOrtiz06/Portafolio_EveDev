@@ -62,7 +62,7 @@
           </ul>
         </div>
 
-         <div class="img-intro"></div>
+        <div class="img-intro"></div>
       </div>
     </section>
 
@@ -70,8 +70,12 @@
       <div class="section-div-sobre-mi">
         <h2>Sobre mi</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. <br><br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim
+          dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis
+          ligula et lacinia. <br><br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim
+          dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis
+          ligula et lacinia.
         </p>
         <img src="assets/sobre_mi/firma.png" alt="imagen firma" />
       </div>
@@ -139,7 +143,7 @@
         <div class="formacion-academica">
           <figure>
             <div class="img-formacion">
-            <img src="assets/formacion/infounsalogo_181x108.png" alt="Icono UNSA" />
+              <img src="assets/formacion/infounsalogo_181x108.png" alt="Icono UNSA" />
             </div>
             <figcaption>
               <h3>Análisis de datos</h3>
@@ -148,7 +152,7 @@
           </figure>
           <figure>
             <div class="img-formacion">
-            <img src="assets/formacion/iconalura.png" alt="Icono Alura" />
+              <img src="assets/formacion/iconalura.png" alt="Icono Alura" />
             </div>
             <figcaption>
               <h3>Formación Frontend</h3>
@@ -157,7 +161,7 @@
           </figure>
           <figure>
             <div class="img-formacion">
-            <img src="assets/formacion/Egg-educacion-570x570.png" alt="Icono Egg" />
+              <img src="assets/formacion/Egg-educacion-570x570.png" alt="Icono Egg" />
             </div>
             <figcaption>
               <h3>Formación Fullstack</h3>
@@ -172,36 +176,105 @@
       <div class="section-div-proyectos">
         <h2 class="titulo-seccion">Experiencia Laboral</h2>
         <div class="proyectos-realizados">
-          <figure>
-            <iframe src="https://eveortiz06.github.io/challenge-encriptador/"
-              title="Vista del Proyecto Encriptador de texto">
-            </iframe>
-            <figcaption>
+
+          <figure class="proyecto-card">
+            <img src="assets/proyectos/proyecto1.encriptador.jpg" alt="projecto1" class="img-project-card">
+            <figcaption class="description-project">
               <h3>Proyecto Encriptador de texto</h3>
-              <p>Challege Alura Codificador</p>
+              <p>Challenge Alura Codificador</p>
               <ul class="botones-enlaces">
-                <li>
-                  <a href="https://github.com/EveOrtiz06/challenge-encriptador">Repositorio</a>
+                <li class="boton-repo">
+                  <a class="link-repo" href="https://github.com/EveOrtiz06/challenge-encriptador">Repositorio</a>
                 </li>
-                <li>
-                  <a href="https://eveortiz06.github.io/challenge-encriptador/">Ver demo</a>
+                <li class="boton-demo">
+                  <a class="link-demo" href="https://eveortiz06.github.io/challenge-encriptador/">Ver demo</a>
                 </li>
               </ul>
             </figcaption>
           </figure>
+
+          <figure class="proyecto-card proyecto-card-impar">
+            <img src="assets/proyectos/proyecto2.png" alt="projecto2" class="img-project-card img-card-impar">
+            <figcaption class="description-project">
+              <h3>Proyecto Lorem ipsum dolor...</h3>
+              <p>Challenge Lorem ipsum dolor...</p>
+              <ul class="botones-enlaces">
+                <li class="boton-repo">
+                  <a class="link-repo" href="#">Repositorio</a>
+                </li>
+                <li class="boton-demo">
+                  <a class="link-demo" href="#">Ver demo</a>
+                </li>
+              </ul>
+            </figcaption>
+          </figure>
+
+          <figure class="proyecto-card">
+            <img src="assets/proyectos/proyecto3.png" alt="projecto3" class="img-project-card">
+            <figcaption class="description-project">
+              <h3>Proyecto Lorem ipsum dolor...</h3>
+              <p>Challenge Lorem ipsum dolor...</p>
+              <ul class="botones-enlaces">
+                <li class="boton-repo">
+                  <a class="link-repo" href="#">Repositorio</a>
+                </li>
+                <li class="boton-demo">
+                  <a class="link-demo" href="#">Ver demo</a>
+                </li>
+              </ul>
+            </figcaption>
+          </figure>
+
         </div>
       </div>
     </section>
 
     <section id="contacto">
       <div class="section-div-contacto">
-        <h2 class="titulo-seccion">Contacto</h2>
+        <img src="assets/contacto/unsplash_JYGnB9gTCls.png" alt="">
+        <form class="form-contact" action="" method="" aria-labelledby="contactTitle">
+          <legend>
+            <h2 id="contactTitle">Contacto</h2>
+            <p>¿Quieres contactarme?</p>
+            <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+          </legend>
+
+          <!-- Nombre -->
+          <label>
+            Nombre
+            <input class="input" type="text" name="nombre" placeholder="André Lisboa" required>
+          </label>
+
+          <!-- Email -->
+          <label>
+            E-mail
+            <input class="input" type="email" name="email" placeholder="andre.lisboa@alur" required>
+          </label>
+
+          <!-- Asunto -->
+          <label>
+            <input class="input" type="text" name="asunto" placeholder="Asunto" required>
+          </label>
+
+          <!-- Mensaje -->
+          <label>
+            <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+          </label>
+
+          <!-- Botón de Enviar -->
+          <button class="submit" type="submit">
+            Enviar mensaje
+          </button>
+        </form>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <p>Desarrollado por Fulana de Tal</p>
+    <p>2024</p>
+  </footer>
 </body>
 
 </html>
