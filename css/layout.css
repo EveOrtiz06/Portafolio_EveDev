@@ -5,37 +5,35 @@ html {
     /* 16px */
 }
 
-.evedev,
-.correo-contacto {
-    font-size: 1rem;
-}
 
-.evedev {
-    font-weight: bold;
-}
 
-/* 
-  .sobre-mi{
-      background-color: var(--color-secundario);
-  }
-  .formacion{
-      background-color: var(--color-secundario);
-  }
-  .contacto {
-      background-color: var(--color-secundario);
-      
-  } */
+
 
 /* Estilos predeterminados (MOBILE) */
 body {
     font-size: 0.875rem;
     /* 14px */
-    /* padding: 0 1rem; */
-    /* 16px */
     font-family: var(--fuente-raleway);
-
     color: var(--color-fuente);
+
 }
+
+
+
+.div-header,
+.section-div-intro,
+.section-div-sobre-mi,
+.section-div-skills,
+.section-div-hobbies,
+.section-div-formacion,
+.section-div-proyectos,
+.section-div-contacto,
+.div-footer {
+    padding: 1rem;
+}
+
+
+
 
 p,
 a {
@@ -58,29 +56,14 @@ h3 {
     font-weight: bold;
 }
 
+
+
+
 /* header mobile */
-header,
-main,
-section,
-footer {
-    /* width: 100vw; */
-    margin: 0;
-    padding: 0;
+
+#header {
+    background-color: var(--color-primario);
 }
-
-.div-header,
-.section-div-intro,
-.section-div-sobre-mi,
-.section-div-skills,
-.section-div-hobbies,
-.section-div-formacion,
-.section-div-proyectos,
-.section-div-contacto,
-.footer {
-    padding: 1rem 1rem;
-}
-
-
 
 .titulo-seccion {
     text-align: center;
@@ -91,12 +74,22 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--color-primario);
+
 }
 
 .lista-menu {
     display: none;
 }
+
+.evedev,
+.correo-contacto {
+    font-size: 1rem;
+}
+
+.evedev {
+    font-weight: bold;
+}
+
 
 /* section intro */
 .intro {
@@ -143,7 +136,7 @@ ul {
     font-size: 1rem;
     display: flex;
     gap: 0.5rem;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .lista-redirecciones li {
@@ -366,7 +359,7 @@ button,
 textarea {
 
     display: block;
-    width: 100%;
+    /* width: 100%; */
     border: none;
 
 
@@ -445,26 +438,15 @@ textarea {
     body {
         font-size: 0.875rem;
         /* 14px */
-        /* padding: 0 2rem; */
-        /* 32px */
+
     }
 
-    header {
-        background-color: var(--color-primario);
-    }
+    
 
-    header,
-    main,
-    section,
-    footer {
-        /* width: 100vw; */
-        margin: 0;
-        padding: 0;
-    }
-
-    .div-header {
+    .div-header{
         padding: 1rem 2rem;
     }
+
 
     .section-div-intro,
     .section-div-sobre-mi,
@@ -473,9 +455,18 @@ textarea {
     .section-div-formacion,
     .section-div-proyectos,
     .section-div-contacto,
-    .footer {
-        padding: 2rem 2rem;
+    .div-footer  {
+        padding: 2rem;
     }
+
+
+    header {
+        background-color: var(--color-primario);
+    }
+
+
+
+
 
     p,
     a {
@@ -511,9 +502,7 @@ textarea {
         align-items: center;
         grid-gap: auto;
         background-color: var(--color-primario);
-        /* flex-direction: row;
-        justify-content: space-between;
-        flex-wrap:wrap-reverse;  */
+
     }
 
     .img-intro {
@@ -533,7 +522,7 @@ textarea {
 
     }
 
-   
+
 
     .descripcion-intro h2 {
         font-size: 1.375rem;
@@ -607,250 +596,254 @@ textarea {
         display: none;
     }
 }
-    /* Desktop */
-    @media screen and (min-width: 769px) {
-        body {
-            font-size: 1rem;
-            /* 16px */
-            /* padding: 0 2rem; */
-            /* 32px */
-            /* max-width: 1136px; */
-            margin: auto;
-        }
 
-        header,
-        main,
-        section,
-        footer {
-            max-width: 100vw;
-            margin: 0;
-            padding: 0;
-        }
+/* Desktop */
+@media screen and (min-width: 769px) {
+    body {
+        font-size: 1rem;
+        /* 16px */
 
-        .div-header,
-        .section-div-intro,
-        .section-div-sobre-mi,
-        .section-div-skills,
-        .section-div-hobbies,
-        .section-div-formacion,
-        .section-div-proyectos,
-        .section-div-contacto,
-        .footer {
-            padding: 2rem 1rem;
-            max-width: 1136px;
-            margin: 0 auto;
-        }
-
-        .evedev,
-        .lista-menu-contacto {
-            font-size: 1rem;
-            font-weight: bold;
-        }
-
-        p,
-        a {
-            font-size: 1rem;
-        }
-
-        figcaption {
-            font-size: 1rem;
-            font-weight: bold;
-        }
-
-        h2 {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        h3 {
-            font-size: 1.375rem;
-            font-weight: bold;
-        }
-
-        /*  HEADER desktop */
-        header {
-            background-color: var(--color-primario);
-        }
-
-        .lista-menu {
-            display: flex;
-            justify-content: space-between;
-            gap: 32px;
-            font-size: 1rem;
-            /* 16px */
-            font-weight: 500;
-            color: #464646;
-        }
-
-        .correo-contacto {
-            display: none;
-        }
-
-        /* section intro desktop */
-        .intro {
-            background-color: var(--color-primario);
-        }
-
-        .section-div-intro {
-            display: flex;
-            align-items: center;
-
-            flex-wrap: nowrap;
-
-            justify-content: space-between;
-        }
-
-        .descripcion-intro {
-            max-width: 751px;
-
-            padding: 2rem 0;
-        }
-
-        .descripcion-intro h2 {
-            font-weight: 700;
-            font-size: 3.25rem;
-            /* 52px */
-        }
-
-        .descripcion-intro p {
-            padding: 1.5rem 0;
-            font-size: 1.375rem;
-        }
-
-        .img-intro {
-            width: 368px;
-            height: auto;
-            min-width: 146px;
-
-            background-image: url(https://acortar.link/pytFTe);
-            background-size: cover;
-            background-position: center;
-            border-radius: 50%;
-            padding: 0;
-            margin: 0;
-            aspect-ratio: 1 / 1;
-        }
-
-        .lista-redirecciones {
-            font-size: 1rem;
-            display: flex;
-            gap: 32px;
-            flex-wrap: nowrap;
-        }
-
-        /* section sobre mi */
-        #sobre-mi {
-            background-color: var(--color-secundario);
-        }
-
-        /* section skills */
-        #skills {
-            background-color: var(--color-primario);
-        }
-
-        .skills-grid {
-            grid-template-columns: repeat(176px);
-        }
-
-        .skills-grid-card {
-            height: 158px;
-            background-color: #E5E5E5;
-        }
-
-        /* section hobbies */
-        #hobbies {
-            background-color: var(--color-primario);
-        }
-
-        .hobbies-grid-card {
-            height: 158px;
-            background-color: #E5E5E5;
-        }
-
-        /* section formacion */
-        #formacion {
-            background-color: var(--color-secundario);
-        }
-
-        .formacion-academica figure {
-            height: 368px;
-            background-color: none;
-        }
-
-        .img-formacion {
-            height: 286px;
-            background-color: #E5E5E5;
-        }
-
-        .img-formacion img {
-            height: 150px;
-            width: auto;
-        }
-
-        /* section proyectos/experiencia */
-        #proyectos {
-            background-color: var(--color-primario);
-        }
-
-        .proyecto-card {
-            height: 406px;
-            display: flex;
-            gap: 16px;
-            
-
-
-        }
-
-        .proyecto-card-impar {
-            justify-content: space-between;
-
-        }
-
-        .img-card-impar {
-            order: 1;
-        }
-
-        .proyecto-card img {
-            max-width: 752px;
-            height: 100%;
-        }
-
-        .proyecto-card figcaption {
-            align-content: center;
-        }
-
-
-        .botones-enlaces li {
-            height: 51px;
-            width: 116px;
-        }
-
-        /* section contacto */
-        #contacto {
-            background-color: var(--color-secundario);
-        }
-
-        .section-div-contacto {
-            display: flex;
-            justify-content: space-between;
-            gap: 16px;
-            width: 100%;
-
-        }
-
-        .section-div-contacto img {
-            max-width: 464px;
-            height: 593px;
-            display: flex;
-        }
-
-        label, 
-        input,
-        textarea{
-            width: 100%;
-        }
-
-        .form-contact {
-            max-width: 656px;
-        }
+        margin: auto;
     }
+
+    
+
+    .div-header,
+    .section-div-intro,
+    .section-div-sobre-mi,
+    .section-div-skills,
+    .section-div-hobbies,
+    .section-div-formacion,
+    .section-div-proyectos,
+    .section-div-contacto,
+    .div-footer {
+        padding: 2rem;
+        margin: auto;
+        max-width: 1136px;
+    }
+
+
+    /* Header */
+    .evedev,
+    .lista-menu-contacto {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    p,
+    a {
+        font-size: 1rem;
+    }
+
+    figcaption {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 1.375rem;
+        font-weight: bold;
+    }
+
+    /*  HEADER desktop */
+    header {
+        background-color: var(--color-primario);
+    }
+
+    .lista-menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        font-size: 1rem;
+        /* 16px */
+        font-weight: 500;
+        color: #464646;
+    }
+
+    .correo-contacto {
+        display: none;
+    }
+
+    /* section intro desktop */
+    .intro {
+        background-color: var(--color-primario);
+    }
+
+    .section-div-intro {
+        display: flex;
+        align-items: center;
+
+        flex-wrap: nowrap;
+
+        justify-content: space-between;
+    }
+
+    .descripcion-intro {
+        max-width: 751px;
+
+        padding: 2rem 0;
+    }
+
+    .descripcion-intro h2 {
+        font-weight: 700;
+        font-size: 3.25rem;
+        /* 52px */
+    }
+
+    .descripcion-intro p {
+        padding: 1.5rem 0;
+        font-size: 1.375rem;
+    }
+
+    .img-intro {
+        width: 368px;
+        height: auto;
+        min-width: 146px;
+
+        background-image: url(https://acortar.link/pytFTe);
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        padding: 0;
+        margin: 0;
+        aspect-ratio: 1 / 1;
+    }
+
+    .lista-redirecciones {
+        font-size: 1rem;
+        display: flex;
+        gap: 32px;
+        flex-wrap: nowrap;
+    }
+
+    /* section sobre mi */
+    #sobre-mi {
+        background-color: var(--color-secundario);
+    }
+
+    /* section skills */
+    #skills {
+        background-color: var(--color-primario);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(176px);
+    }
+
+    .skills-grid-card {
+        height: 158px;
+        background-color: #E5E5E5;
+    }
+
+    /* section hobbies */
+    #hobbies {
+        background-color: var(--color-primario);
+    }
+
+    .hobbies-grid-card {
+        height: 158px;
+        background-color: #E5E5E5;
+    }
+
+    /* section formacion */
+    #formacion {
+        background-color: var(--color-secundario);
+    }
+
+    .formacion-academica figure {
+        height: 368px;
+        background-color: none;
+    }
+
+    .img-formacion {
+        height: 286px;
+        background-color: #E5E5E5;
+    }
+
+    .img-formacion img {
+        height: 150px;
+        width: auto;
+    }
+
+    /* section proyectos/experiencia */
+    #proyectos {
+        background-color: var(--color-primario);
+    }
+
+    .proyecto-card {
+        display: grid;
+        grid-template-columns: auto 1fr;
+
+        max-height: 406px;
+
+        grid-gap: 16px;
+        max-width: 100%;
+
+
+
+
+    }
+
+    .proyecto-card-impar {
+        justify-content: space-between;
+
+    }
+
+    .img-card-impar {
+        order: 1;
+    }
+
+    .img-project-card {
+        max-width: 752px;
+
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .proyecto-card figcaption {
+        align-content: center;
+    }
+
+
+    .botones-enlaces li {
+        height: 51px;
+        width: 116px;
+    }
+
+    /* section contacto */
+    #contacto {
+        background-color: var(--color-secundario);
+    }
+
+    .section-div-contacto {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        justify-content: space-between;
+        grid-gap: 16px;
+        
+
+    }
+
+    .section-div-contacto img {
+
+        height: 593px;
+        max-width: 464px;
+        display: flex;
+        object-fit: cover;
+    }
+
+    /* label,
+    input,
+    textarea {
+        width: 100%;
+    } */
+
+    .form-contact {
+        max-width: 656px;
+    }
+}
