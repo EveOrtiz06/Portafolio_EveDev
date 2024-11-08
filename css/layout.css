@@ -441,9 +441,9 @@ textarea {
 
     }
 
-    
 
-    .div-header{
+
+    .div-header {
         padding: 1rem 2rem;
     }
 
@@ -455,7 +455,7 @@ textarea {
     .section-div-formacion,
     .section-div-proyectos,
     .section-div-contacto,
-    .div-footer  {
+    .div-footer {
         padding: 2rem;
     }
 
@@ -606,7 +606,7 @@ textarea {
         margin: auto;
     }
 
-    
+
 
     .div-header,
     .section-div-intro,
@@ -655,15 +655,25 @@ textarea {
         background-color: var(--color-primario);
     }
 
-    .lista-menu {
+    /* .lista-menu {
         display: flex;
         justify-content: space-between;
         gap: 32px;
-        font-size: 1rem;
-        /* 16px */
-        font-weight: 500;
+        font-size: 1rem; 16px 
+       
+        
         color: #464646;
     }
+ */
+
+    .lista-menu {
+        display: flex;
+        font-size: 1rem;  /* 16px  */
+        font-weight: 500;
+
+        gap: 2rem;
+    }
+
 
     .correo-contacto {
         display: none;
@@ -825,7 +835,7 @@ textarea {
         grid-template-columns: auto 1fr;
         justify-content: space-between;
         grid-gap: 16px;
-        
+
 
     }
 
